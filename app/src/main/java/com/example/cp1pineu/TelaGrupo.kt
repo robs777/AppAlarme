@@ -16,7 +16,7 @@ class TelaGrupo: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tela_grupo)
 
         buttonRelogio = findViewById(R.id.imageButtonFuso)
         buttonRelogio.setOnClickListener{
