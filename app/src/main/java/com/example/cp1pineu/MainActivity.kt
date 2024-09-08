@@ -27,14 +27,14 @@ class MainActivity : AppCompatActivity() {
 
         buttonGrupo = findViewById(R.id.imgButtonGrupo)
         buttonGrupo.setOnClickListener{
-            val navegarRelogio = Intent(this,TelaGrupo::class.java)
-            startActivity(navegarRelogio)
+            val navegarGrupo = Intent(this,TelaGrupo::class.java)
+            startActivity(navegarGrupo)
         }
 
         buttonAlarme = findViewById(R.id.imageButtonAlarme)
         buttonAlarme.setOnClickListener{
-            val navegarRelogio = Intent(this,TelaGrupo::class.java)
-            startActivity(navegarRelogio)
+            val navegarAlarme = Intent(this,MainActivity::class.java)
+            startActivity(navegarAlarme)
         }
 
 

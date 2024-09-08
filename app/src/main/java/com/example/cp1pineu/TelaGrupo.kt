@@ -15,24 +15,24 @@ class TelaGrupo: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_tela_grupo)
+        setContentView(R.layout.activity_main)
 
         buttonRelogio = findViewById(R.id.imageButtonFuso)
-        buttonRelogio.setOnClickListener {
-            val navegarRelogio = Intent(this, TelaRelogio::class.java)
+        buttonRelogio.setOnClickListener{
+            val navegarRelogio = Intent(this,TelaRelogio::class.java)
             startActivity(navegarRelogio)
         }
 
         buttonGrupo = findViewById(R.id.imgButtonGrupo)
-        buttonGrupo.setOnClickListener {
-            val navegarRelogio = Intent(this, TelaGrupo::class.java)
-            startActivity(navegarRelogio)
+        buttonGrupo.setOnClickListener{
+            val navegarGrupo = Intent(this,TelaGrupo::class.java)
+            startActivity(navegarGrupo)
         }
 
         buttonAlarme = findViewById(R.id.imageButtonAlarme)
-        buttonAlarme.setOnClickListener {
-            val navegarRelogio = Intent(this, TelaGrupo::class.java)
-            startActivity(navegarRelogio)
+        buttonAlarme.setOnClickListener{
+            val navegarAlarme = Intent(this,MainActivity::class.java)
+            startActivity(navegarAlarme)
         }
 
 
